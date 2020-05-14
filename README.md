@@ -1,4 +1,4 @@
-####Translating Telugu Word Image to its Meaningful English Word as Speech
+#Translating Telugu Word Image to its Meaningful English Word as Speech
 This is a project for the telugu word image as input &translate into its meaningful english word as speech as output.
 
 ###About
