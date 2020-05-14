@@ -11,13 +11,13 @@ This project contain one main python file named as speechtranslator.py and conta
 Tesseract-ocr
 
 ### Libraries Used
-Pyttsx3
-Googletrans(Translator)
-Pyinstaller(to create an application)
+* Pyttsx3
+* Googletrans(Translator)
+* Pyinstaller(to create an application)
 
 ### Skills
-Python
-Tkinter
+* Python
+* Tkinter
 
 
 
