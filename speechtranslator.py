@@ -8,7 +8,7 @@ from PIL import ImageTk, Image
 import numpy as np
 import pyttsx3
 import imghdr
-import cv2
+#import cv2
 
 root = Tk()
 root.title("Translating Telugu Word Image to its Meaningful English Word as Speech")
@@ -29,19 +29,19 @@ def convert(location):
     except Exception as e:
         print(e)
     img = Image.open(location)
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    #img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     #cv2.imshow("Gray Scale", img)
-    cv2.waitKey(2000)
-    cv2.destroyAllWindows()
-    kernel = np.ones((5,5), np.uint8) 
-    img = cv2.erode(img, kernel, iterations=1) 
+    #cv2.waitKey(2000)
+    #cv2.destroyAllWindows()
+    #kernel = np.ones((5,5), np.uint8) 
+    #img = cv2.erode(img, kernel, iterations=1) 
     #cv2.imshow("eroded", img)
-    cv2.waitKey(2000)
-    cv2.destroyAllWindows()
-    img = cv2.dilate(img, kernel, iterations=1)
+    #cv2.waitKey(2000)
+    #cv2.destroyAllWindows()
+    #img = cv2.dilate(img, kernel, iterations=1)
     #cv2.imshow("dilation", img)
-    cv2.waitKey(2000)
-    cv2.destroyAllWindows()
+    #cv2.waitKey(2000)
+    #cv2.destroyAllWindows()
     a = pytesseract.image_to_string(img, lang='tel')
     file = open("file.txt", "wb")
     print(a)
